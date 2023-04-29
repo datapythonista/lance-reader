@@ -1,0 +1,9 @@
+[project]
+name = "lance-reader"
+version = "0.1.0"
+dependencies = [
+    "pylance>=0.4",
+]
+
+[project.entry-points."dataframe.io"]
+lance = "lance_reader:LanceDataFrameIO"
